@@ -6,7 +6,7 @@ The goal of this repository is to create a lot of React components.
 
 To start this project, you can:
 - Clone this project
-- Go inside `starter-code`
+- Go inside `lab folder`
 - Run `npm install`
 - Run `npm start`
 
@@ -268,20 +268,6 @@ Create a `Dice` component that display a random picture (example: `'/img/dice3.p
 ![image](https://user-images.githubusercontent.com/5306791/52976752-f64a8500-33ca-11e9-98ee-b0b17f5e85b2.png)
 
 
-## State | `Carousel`
-
-Create a `Carousel` component that displays an image and two buttons ('left' and 'right') and that changes the picture everytime.
-
-**Example**
-```js
-<Carousel
-  imgs={["https://randomuser.me/api/portraits/women/1.jpg", "https://randomuser.me/api/portraits/men/1.jpg","https://randomuser.me/api/portraits/women/2.jpg", "https://randomuser.me/api/portraits/men/2.jpg"]} />
-```
-
-**Output**
-
-![](https://media.giphy.com/media/1n7cAJu0MWerLnnohR/giphy.gif)
-
 ## List and Keys | `NumbersTable`
 
 Create a `NumbersTable` component that displays a list of numbers between 1 and a limit. Even numbers must be red.
@@ -297,8 +283,6 @@ It takes 1 props:
 **Output**
 
 ![image](https://user-images.githubusercontent.com/5306791/53028410-13349600-3467-11e9-8199-407375e61ab0.png)
-
-
 
 
 ## List and Keys | `FaceBook` | Simple
@@ -377,8 +361,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 ## Lifting State Up | RGBColorPicker
-
-
 
 Create 2 components:
 - `RGBColorPicker`: 
