@@ -338,16 +338,7 @@ For this, you will need 3 states:
 - `password`
 - `nationality`
 
-
-If you want to include Bootstrap with [Reactstrap](https://reactstrap.github.io), you should run
-```sh
-npm install reactstrap bootstrap
-```
-
-And add the following line in `src/index.js`
-```js
-import 'bootstrap/dist/css/bootstrap.min.css';
-```
+You could use Bulma to style the form for example.
 
 
 **Example**
