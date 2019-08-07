@@ -6,6 +6,7 @@ import BoxColor from './components/BoxColor';
 import CreditCard from './components/CreditCard';
 import Rating from './components/Rating';
 import DriverCard from './components/DriverCard';
+import ClickablePicture from './components/ClickablePicture';
 
 class App extends Component {
   render() {
@@ -91,6 +92,10 @@ class App extends Component {
           model: "Audi A3",
           licensePlate: "BE33ER"
         }} />
+        <h1>ClickablePicture</h1>
+        <ClickablePicture
+        img="/img/persons/maxence.png"
+        imgClicked="/img/persons/maxence-glasses.png" />
       </div>
 
     );
