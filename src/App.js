@@ -7,6 +7,7 @@ import CreditCard from './components/CreditCard';
 import Rating from './components/Rating';
 import DriverCard from './components/DriverCard';
 import ClickablePicture from './components/ClickablePicture';
+import LikeButton from './components/LikeButton';
 
 class App extends Component {
   render() {
@@ -92,6 +93,8 @@ class App extends Component {
           model: "Audi A3",
           licensePlate: "BE33ER"
         }} />
+        <h1>LikeButton</h1>
+        <LikeButton />
         <h1>ClickablePicture</h1>
         <ClickablePicture
         img="/img/persons/maxence.png"
@@ -103,6 +106,3 @@ class App extends Component {
 }
 
 export default App;
-
-// var birth= new Date("1992-07-14")
-// console.log(birth.toDateString)

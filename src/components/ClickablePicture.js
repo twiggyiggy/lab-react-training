@@ -3,15 +3,25 @@ import React, { Component } from 'react'
 class ClickablePicture extends Component {
 
     constructor(props) {
-        this.props = props
         super(props)
+        this.props = props
         this.state = {
             isClicked: false
         }
+        this.changeState = this.changeState.bind(this);
     }
 
-    changeState() {
-
+    changeState(e) {
+        e.preventDefault();
+        if (!this.state.isClicked) {
+            this.setState({
+                isClicked: true
+            })
+        } else {
+            this.setState({
+                isClicked: false
+            })
+        }
     }
 
     render() {
@@ -19,16 +29,16 @@ class ClickablePicture extends Component {
         let img;
 
         if (this.state.isClicked) {
-            img = <img url={this.props.imgClicked}/>
+            img = <img src={this.props.imgClicked}/>
         } else {
-            img = <img url={this.props.img}/>
+            img = <img src={this.props.img}/>
         }
 
         return (
             <div>
-                <button onClick={this.changeState}>
+                <a href="#" onClick={this.changeState}>
                     {img}
-                </button>
+                </a>
             </div>
         )
     }
