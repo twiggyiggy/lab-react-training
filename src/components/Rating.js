@@ -3,7 +3,6 @@ import React from 'react'
 function Rating(props) {
 
     function getStars(rating) {
-        console.log(rating)
         switch (Math.round(rating)) {
             case 0:
                 return '☆☆☆☆☆'
