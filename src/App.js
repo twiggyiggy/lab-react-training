@@ -9,6 +9,7 @@ import DriverCard from './components/DriverCard';
 import ClickablePicture from './components/ClickablePicture';
 import LikeButton from './components/LikeButton';
 import Dice from './components/Dice';
+import NumbersTable from './components/NumbersTable'
 
 
 class App extends Component {
@@ -104,7 +105,7 @@ class App extends Component {
         <h1>Dicccceeee</h1>
         <Dice />
         <h1>NumbersTable</h1>
-        {/* <NumbersTable limit={12} /> */}
+        <NumbersTable limit={12} />
       </div>
 
     );

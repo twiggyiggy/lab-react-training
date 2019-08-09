@@ -21,3 +21,24 @@ code {
   width: 100px;
   height: auto;
 }
+
+.numbers-table {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 510px;
+}
+
+.number-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  width: 100px;
+  height: 100px;
+  background-color: white;
+  border: 1px solid black;
+}
+
+.red-box {
+  background-color: red;
+}
