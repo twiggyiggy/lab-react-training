@@ -103,6 +103,8 @@ class App extends Component {
         imgClicked="/img/persons/maxence-glasses.png" />
         <h1>Dicccceeee</h1>
         <Dice />
+        <h1>NumbersTable</h1>
+        {/* <NumbersTable limit={12} /> */}
       </div>
 
     );

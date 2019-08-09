@@ -14,11 +14,11 @@ class Dice extends Component {
     this.setState({
       diceValue: 0,
     })
-
     let newDiceValue = Math.floor(Math.random()*6 + 1);
-    this.setState({
+    setTimeout(() => {this.setState({
       diceValue: newDiceValue,
-    })
+    })}, 1000)
+
   }
 
   render() {
