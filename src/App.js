@@ -8,6 +8,8 @@ import Rating from './components/Rating';
 import DriverCard from './components/DriverCard';
 import ClickablePicture from './components/ClickablePicture';
 import LikeButton from './components/LikeButton';
+import Dice from './components/Dice';
+
 
 class App extends Component {
   render() {
@@ -99,6 +101,8 @@ class App extends Component {
         <ClickablePicture
         img="/img/persons/maxence.png"
         imgClicked="/img/persons/maxence-glasses.png" />
+        <h1>Dicccceeee</h1>
+        <Dice />
       </div>
 
     );

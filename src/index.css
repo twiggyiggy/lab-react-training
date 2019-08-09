@@ -16,3 +16,8 @@ code {
 .idCardBox {
   
 }
+
+.dice-container img {
+  width: 100px;
+  height: auto;
+}
