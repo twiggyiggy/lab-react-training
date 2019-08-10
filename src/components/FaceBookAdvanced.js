@@ -47,6 +47,10 @@ export default class FaceBookAdvanced extends Component {
     }
 
     changeSelectedCountry(country){
+<<<<<<< HEAD
+=======
+        // console.log(country);
+>>>>>>> 48b5d9739f606fad31b3c25754f57fde2424c6f0
         this.setState({
             selectedCountry: country,
         })
