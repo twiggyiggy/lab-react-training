@@ -10,6 +10,9 @@ import ClickablePicture from './components/ClickablePicture';
 import LikeButton from './components/LikeButton';
 import Dice from './components/Dice';
 import NumbersTable from './components/NumbersTable'
+import FaceBook from './components/FaceBook';
+import FaceBookAdvanced from './components/FaceBookAdvanced';
+
 
 
 class App extends Component {
@@ -106,6 +109,10 @@ class App extends Component {
         <Dice />
         <h1>NumbersTable</h1>
         <NumbersTable limit={12} />
+        <h1>FaceBook</h1>
+        <FaceBook/>
+        <h1>FaceBook Advanced</h1>
+        <FaceBookAdvanced/>
       </div>
 
     );

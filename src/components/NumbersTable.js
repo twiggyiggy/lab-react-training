@@ -14,8 +14,8 @@ export default function NumbersTable(props) {
         return "number-box";
     }
 
-    const numbersTable = sequence.map((number) => 
-        <article className={getBoxClasses(number)}>
+    const numbersTable = sequence.map((number, index) => 
+        <article className={getBoxClasses(number)} key = {index}>
             <p>{number}</p>
         </article>
     );
