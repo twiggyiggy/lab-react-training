@@ -27,31 +27,31 @@ class Dice extends Component {
 
     switch(this.state.diceValue) {
       case 1:
-          img = <img src='img/dice1.png'/>
+          img = <img src='img/dice1.png' alt='kostka'/>
         break;
       case 2:
-          img = <img src='img/dice2.png'/>
+          img = <img src='img/dice2.png' alt='kostka'/>
         break;
       case 3:
-          img = <img src='img/dice3.png'/>
+          img = <img src='img/dice3.png' alt='kostka'/>
         break;
       case 4:
-          img = <img src='img/dice4.png'/>
+          img = <img src='img/dice4.png' alt='kostka'/>
         break;
       case 5:
-          img = <img src='img/dice5.png'/>
+          img = <img src='img/dice5.png' alt='kostka'/>
         break;
       case 6:
-          img = <img src='img/dice6.png'/>
+          img = <img src='img/dice6.png' alt='kostka'/>
         break;
       default:
-          img = <img src='img/dice-empty.png'/>
+          img = <img src='img/dice-empty.png' alt='kostka'/>
         break;
     }
 
     return (
       <div className="dice-container">
-        <a onClick={this.changeDiceValue}>
+        <a href="/" onClick={this.changeDiceValue}>
           {img}
         </a>
       </div>

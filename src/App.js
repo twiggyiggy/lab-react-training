@@ -19,6 +19,8 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+        <h1>Facebook Advanced</h1>
+        <FaceBookAdvanced/>
         <h1>IdCard</h1>
         <IdCard 
           lastName='Doe'
@@ -112,7 +114,6 @@ class App extends Component {
         <h1>FaceBook</h1>
         <FaceBook/>
         <h1>FaceBook Advanced</h1>
-        <FaceBookAdvanced/>
       </div>
 
     );

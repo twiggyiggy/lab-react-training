@@ -12,7 +12,7 @@ export default class FaceBookAdvanced extends Component {
             selectedCountry: 0
         }
         this.getUniqueCountries(profiles)
-        console.log(this.uniqueCountries)
+        this.changeSelectedCountry = this.changeSelectedCountry.bind(this);
     }
 
     getUniqueCountries(profiles) {
@@ -24,7 +24,7 @@ export default class FaceBookAdvanced extends Component {
     }
 
 
-    getClassName(profile) {
+    getCSSClassName(profile) {
         if (profile.country === this.state.selectedCountry) {
             return "facebook-card selected-facebook-card"
         } else {
@@ -35,8 +35,8 @@ export default class FaceBookAdvanced extends Component {
     // buttons = uniqueCountries.map()
     getCards() {
         let cards = profiles.map((profile, index) => 
-            <article key = {index} className={this.getClassName(profile)}>
-                <img src = {profile.img} width='50px'/>
+            <article key = {index} className={this.getCSSClassName(profile)}>
+                <img src = {profile.img} width='50px' alt='profile'/>
                 <p><strong>First name: </strong> {profile.firstName}</p>
                 <p><strong>Last name: </strong> {profile.lastName}</p>
                 <p><strong>Country: </strong> {profile.country}</p>
@@ -46,10 +46,24 @@ export default class FaceBookAdvanced extends Component {
         return cards;
     }
 
+    changeSelectedCountry(event, country){
+        console.log(event);
+        this.setState({
+            selectedCountry: country,
+        })
+    }
+
+    getButtons() {
+        let buttons = this.uniqueCountries.map((country, index) => 
+            <button onClick={(event, country) => this.changeSelectedCountry(country)} key={index}>{country}</button>        
+        )
+        return buttons;
+    }
+
     render() {
         return (
             <div>
-                {this.buttons}
+                {this.getButtons()}
                 {this.getCards()}
             </div>
         )

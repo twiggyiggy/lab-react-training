@@ -28,12 +28,12 @@ class ClickablePicture extends Component {
 
         let img;
 
-        img = this.state.isClicked ? <img src={this.props.imgClicked}/> : <img src={this.props.img}/>
+        img = this.state.isClicked ? <img src={this.props.imgClicked} alt='kostka'/> : <img src={this.props.img}alt='kostka'/>
 
 
         return (
             <div>
-                <a href="#" onClick={this.changeState}>
+                <a href="/" onClick={this.changeState}>
                     {img}
                 </a>
             </div>

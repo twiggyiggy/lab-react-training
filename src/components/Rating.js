@@ -5,8 +5,8 @@ function Rating(props) {
     function getStars(rating) {
         switch (Math.round(rating)) {
             case 0:
-                return '☆☆☆☆☆'
-                break
+                return '☆☆☆☆☆';
+                break;
             case 1:
                 return '★☆☆☆☆'
                 break
@@ -24,6 +24,7 @@ function Rating(props) {
                 break
             default:
                 return '✿✿✿✿✿'
+                break;
         }
     }
 

@@ -30,7 +30,7 @@ function CreditCard(props) {
     return (
         <div style={divStyle}>
             <div>
-                <img src={getCreditCardCompanyLogo(props.type)} width='50px'></img>
+                <img src={getCreditCardCompanyLogo(props.type)} width='50px' alt='kostka'></img>
             </div>
             <div>
                 {maskify(props.number)}

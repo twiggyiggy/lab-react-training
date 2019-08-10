@@ -9,7 +9,8 @@ class LikeButton extends Component {
   }
 
 
-  incrementLikes() {
+  incrementLikes(e) {
+    console.log(e)
     this.setState( {
       likes: this.state.likes+1
     })

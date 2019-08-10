@@ -44,9 +44,9 @@ code {
 }
 
 .facebook-card {
-
+  background-color: white;
 }
 
 .selected-facebook-card {
-  
+  background-color: lightblue;
 }
