@@ -12,6 +12,7 @@ import Dice from './components/Dice';
 import NumbersTable from './components/NumbersTable'
 import FaceBook from './components/FaceBook';
 import FaceBookAdvanced from './components/FaceBookAdvanced';
+import SignupPage from './components/SignupPage';
 
 
 
@@ -19,6 +20,8 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+        <h1>SignUp Page</h1>
+        <SignupPage/>
         <h1>Facebook Advanced</h1>
         <FaceBookAdvanced/>
         <h1>IdCard</h1>
@@ -113,7 +116,6 @@ class App extends Component {
         <NumbersTable limit={12} />
         <h1>FaceBook</h1>
         <FaceBook/>
-        <h1>FaceBook Advanced</h1>
       </div>
 
     );

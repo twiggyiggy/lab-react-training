@@ -46,8 +46,7 @@ export default class FaceBookAdvanced extends Component {
         return cards;
     }
 
-    changeSelectedCountry(event, country){
-        console.log(event);
+    changeSelectedCountry(country){
         this.setState({
             selectedCountry: country,
         })
@@ -55,7 +54,7 @@ export default class FaceBookAdvanced extends Component {
 
     getButtons() {
         let buttons = this.uniqueCountries.map((country, index) => 
-            <button onClick={(event, country) => this.changeSelectedCountry(country)} key={index}>{country}</button>        
+            <button onClick={() => this.changeSelectedCountry(country)} key={index}>{country}</button>        
         )
         return buttons;
     }
